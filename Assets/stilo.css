@@ -7,7 +7,7 @@
     /* Backgrounds colors */
     --background: #02050e;
     --primary: #1e50ff;
-    --secondary: #404f68;
+    --secondary: #003F62;
     --btn-bg: #050d26;
     --bg-azul: #e9eeff;
     --bg-white: #e4dede;
@@ -44,8 +44,6 @@ header{
     position: fixed;
     top: 0;
     z-index: 2;
-
-    
 }
 
 #encabezado{
@@ -56,39 +54,56 @@ header{
     background: var(--bg-white);
 }
 nav{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-areas: 2fr 4fr 2fr
+                        "logo" "buscar" "info"
+                        "logo" "buscar" "info"
+                        "menus" "menus" "menus"
+                        
+    ;
+    gap: 5rem;
     background: var(--secondary);
-    height: 4rem;
     width: 100%;
+    justify-items:center;
+}
+.logo{
+    
+    height: 2.5rem;
+    grid-area: logo;
+}
+.buscador{
+    grid-area: buscar;
 }
 .informacion{
+    grid-area: info;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    gap: 3rem;
+    gap: 1rem;
     
-    background-color: red;
 }
 .informacion img{
     height: 2rem;
 
 }
-.logo {
-    height: 2.5rem;
-}
 #menu{
+    grid-area: menus;
     display: flex;
+    background-color: var(--background);
 }
 
 #menu li img{
     height: 1.5rem;
 }
 
+/*----------- MAIN -----------*/
 main{
-    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
+/*----------- FOOTER -----------*/
 footer{
     height: 8rem;
 }

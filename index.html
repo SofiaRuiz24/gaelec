@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaelec Materiales Eléctricos</title>
+    <!-- Css link-->
     <link rel="stylesheet" href="Assets/stilo.css">
+    <link rel="shortcut icon" href="Images/logochico2.jpg">
 </head>
 <body>
     <!-- Header -->
@@ -27,7 +29,7 @@
         </div>
         <nav>
             <img class="logo" src="Images/nav/LogoGaelec.png" alt="Logo Gaelec Materiales Eléctricos">
-            <div>
+            <div id="buscador">
                 <div>
                     <h5>Búsqueda de productos...</h5>
                 </div>
@@ -43,7 +45,7 @@
                 <h5>Carro de Compras</h5>
             </div>
             <ul id="menu">
-                <li><a> </a> > >Nosotros</li>
+                <li>Nosotros</li>
                 <li>Contacto</li>
                 <li>Envíos a todo el país</li>
                 <li>
@@ -61,30 +63,104 @@
     </header>
     <main>
         <!-- Hero -->
-        <section id="Portada">
+        <section id="portada">
             <img src="Images/baner/aurora.jpeg" alt="Portada Aurora Guirnaldas Led">
         </section>
-        <!-- Productos -->
-        <section id="Categorias">
-
-        </section>
-        <section id="ProductosRiel">
-
-        </section>
         <!-- Discover -->
-        <section id="Baners">
-
-        </section>
-        <section id="Testimonios">
-
+        <section id="categorias">
+            <div class="cardCateg">
+                <img src="Images/productos/Cableunipolar.png" alt="Tres rollos de cable unipolar">
+                <p><b>Cables Unipolares</b></p>
+                <p>(8 productos)</p>
+            </div>
+            <div class="cardCateg">
+                <img src="Images/productos/LamparaDia.png" alt="Lamparas Jaula Diamante Blanca y Negra">
+                <p><b>Lamparas Colgantes</b></p>
+                <p>(8 productos)</p>
+            </div>
+            <div class="cardCateg">
+                <img src="Images/productos/LlavesJeluz.png" alt="Llaves de Luz Embutir marca Jeluz">
+                <p><b>Llaves Jeluz</b></p>
+                <p>(8 productos)</p>
+            </div>
         </section>
         <!-- Marcas -->
-        <section id="Marcas">
+        <section id="marcas">
             <img src="Images/marcas/jeluz.png" alt="Logo Jeluz">
             <img src="Images/marcas/kalop.png" alt="Logo Kalop">
             <img src="Images/marcas/ferrolux.png" alt="Logo Ferrolux">
             <img src="Images/marcas/luxom.png" alt="Logo Luxom">
             <img src="Images/marcas/tacsa.png" alt="Logo Tacsa">
+        </section>
+        <!-- Productos -->
+        <section id="productosRiel">
+            <h3>Ultimas Entradas</h3>
+            <div>
+                <div class="cardProduct">
+                    <img src="Images/productos/Reflec30.png" alt="Producto Reflector Led 30w">
+                    <p>Reflector Led 30w</p>
+                    <p>$2560</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="cardProduct">
+                    <img src="Images/productos/Panel6w.png" alt="Producto Panel Led Cuadrado Aplicar 6w">
+                    <p>Panel Led Aplicar 6w</p>
+                    <p>$3200</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="cardProduct">
+                    <img src="Images/productos/Hipower40.png" alt="Producto Hi Power 40w">
+                    <p>Hi Power 40w</p>
+                    <p>$4900</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="cardProduct">
+                    <img src="Images/productos/guirnalda10.png" alt="Producto Guirnalda Led 10mts">
+                    <p>Guirnalda Led 10mts</p>
+                    <p>$3600</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+        <!-- Call To Action -->
+        <section id="callToAction">
+            <button>Compre Ya!</button>
+        </section>
+        <div id="beneficios">
+            <div>
+                <img src="Images/iconos/Delivery.png" alt="Icono caja con tilde">
+                <p>Delivery Gratis</p>
+                <p>a partir de $30.000</p>
+            </div>
+            <div>
+                <img src="Images/iconos/Calidad.png" alt="Icono corona">
+                <p>Calidad Garantizada</p>
+                <p>el mejor precio y calidad</p>
+            </div>
+            <div>
+                <img src="Images/iconos/Garantia.png" alt="Icono cerradura">
+                <p>Garantía de Fabrica</p>
+                <p>por 6 meses</p>
+            </div>
+        </div>
+        <!-- Testimonios -->
+        <section id="testimonios">
+            <h3>Testimoniales</h3>
+            <div class="cardTestimonio">
+                <img src="Images/secion/secion1.png" alt="Icono de perfil">
+                <p>Cristina Salvador</p>
+                <p>Comentario con clasificación por Facebook</p>
+            </div>
+            <div class="cardTestimonio">
+                <img src="Images/secion/secion2.png" alt="Icono de perfil">
+                <p>Marcelo Costa</p>
+                <p>Comentario con clasificación por WhatsApp</p>
+            </div>
+            <div class="cardTestimonio">
+                <img src="Images/secion/secion3.png" alt="Icono de perfil">
+                <p>Maria Julia Viña</p>
+                <p>Comentario con clasificación por Instagram</p>
+            </div>
         </section>
     </main>
     <!-- Pie de Página-->
@@ -103,11 +179,17 @@
         <div>
             <img class="logo" src="Images/logoGaelecMaterElec.png" alt="Logo Gaelec Materiales Eléctricos">
             <h3>Valentin Alsina 534, Dorrego Guaymallen Mendoza.</h3>
-            
+            <a href="https://www.instagram.com/GaelecMaterialeselectricos/" target="_blank">
+                <img src="Images/PiePagina/logoInsta.png" alt="Icono de Instagram">
+            </a>
+            <a href="https://facebook.com/GaelecMaterialeselectricos" target="_blank">
+                <img src="Images/PiePagina/logoFacebook.png" alt="Icono de Facebook">
+            </a>
+            <a href="https://wa.me/message/WNA2DAIUBEXOG1" target="_blank">
+                <img src="Images/PiePagina/callcenter.png" alt="Icono de WhatsApp">
+            </a>
             <img src="Images/PiePagina/logoMail.png" alt="Icono de Gmail">
-            <img src="Images/PiePagina/logoFacebook.png" alt="Icono de Facebook">
-            <img src="Images/PiePagina/callcenter.png" alt="Icono de WhatsApp">
-            <img src="Images/PiePagina/logoInsta.png" alt="Icono de Instagram">
+            
         </div>
         <div>
             <h4>¿Necesita Ayuda?</h4>
@@ -119,6 +201,8 @@
                 <li>Políticas de Pago</li>
             </ul>
         </div>
+        <!--Api iframe maps-->
+
     </footer>
 </body>
 </html>
