@@ -11,7 +11,8 @@
     --btn-bg: #050d26;
     --bg-azul: #e9eeff;
     --bg-white: #e4dede;
-    --bg-electric: #5B95B5;
+    --bg-lightblue: #5B95B5;
+    --bg-babyblue: #9cc9e2d8;
     --bg-nav: #0f1525;
 
     /* Text colors */
@@ -39,7 +40,7 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 7rem;
-    padding: 0px 30px;
+    
 
     position: fixed;
     top: 0;
@@ -88,7 +89,7 @@ nav{
 }
 
 #buscador button{
-    background-color: var(--bg-electric);
+    background-color: var(--bg-lightblue);
     border: hidden;
     padding: 0.5rem;
     border-radius: 10px;
@@ -122,7 +123,7 @@ nav{
     width: 15%;
 }
 #menu :last-child{
-    background-color: var(--bg-electric);
+    background-color: var(--bg-lightblue);
     position: absolute;
     right: 0;
     width: 20%;
@@ -134,6 +135,7 @@ main{
     flex-direction: column;
     gap: 4rem;
     padding-top: 11rem;
+    align-items: center;
 }
 #portada{
     width: 100%;
@@ -148,11 +150,11 @@ main{
 }
 
 #categorias{
-    height: 8rem;
+    height:8rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0 2rem;
+    width: 90%;
 }
 .cardCateg{
     display: flex;
@@ -160,12 +162,12 @@ main{
     border-radius: 10px;
     border-color: #8c9197;
     padding: 1rem;
-    width: 25%;
+    width: 23%;
     border-width: 1.5px;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    font-size: 19px;
+    font-size: 17px;
 }
 .cardCateg img{
     height: 7rem;
@@ -179,11 +181,11 @@ main{
     align-items: center;
     gap: 3rem;
 }
-#productosRiel div{
+#rielProd{
     display: flex;
-    gap: 3rem;
     justify-content: space-evenly;
     align-items: center;
+    gap: 4rem;
 }
 .cardProduct{
     display: flex;
@@ -197,12 +199,63 @@ main{
     justify-content: space-evenly;
     align-items: center;
     font-size: 19px;
+    width: 15rem;
+    height: 18rem;
 }
 .cardProduct img{
-    max-height: 9rem;
+    height: 6.5rem;
     max-width: 7rem;
+}
+
+#callToAction{
+    background-image: url(/Images/baner/0803-kaloductosjpg.webp) ;
+    background-repeat: no-repeat;
+    height: 30rem;
+    display: flex;
+    width: 80%;
+    border-radius: 20px;
+    background-size: 100%;
+    position: relative;
+}
+#callToAction button{
+    height: 5rem;
+    width: 9rem;
+    border-radius: 20px;
+    background-color: var(--primary);
+    color: var(--bg-white);
+    border-color: #8c9197;
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+    
+}
+
+#beneficios{
+    display: flex;
+    width: 80%;
+    background-color: var(--bg-babyblue);
+    border-radius: 20px;
+    justify-content: space-around;
+    padding: 2.5rem 0;
+}
+.cardBeneficio{
+    color: var(--secondary);
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+}
+.cardBeneficio img{
+    height: 4rem;
+}
+#testimonios{
+    display: flex;
 }
 /*----------- FOOTER -----------*/
 footer{
     height: 8rem;
+    display: flex;
+}
+footer img{
+    height: 4rem;
+    width: 4rem;
 }
