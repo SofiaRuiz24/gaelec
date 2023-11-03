@@ -16,7 +16,7 @@
                 <img src="Images/PiePagina/callcenter.png" alt="Icono de llamada">
                 <h6>Necesitas ayuda? Comuníquese con: (+54 9) 2615333220 </h6>
             </div>
-            <div>
+            <div class="infoSecundaria">
                 <div class="informacion">
                     <img src="Images/nav/ubicacion.png" alt="Icono de Ubicación">
                     <h6>Dorrego Guaymallen, Mendoza Argentina</h6>
@@ -34,21 +34,23 @@
                     <p>Búsqueda de productos...</p>
                     <button>Buscar</button>
                 </div>
-                <div class="informacion">
-                    <img src="Images/nav/avatar1.png" alt="Icono perfil">
-                    <p>Ingresar</p>
+                <div class="informacion2">
+                    <img src="Images/nav/circle-user-solid.svg" alt="Icono perfil">
+                    <a href="/Assets/pages/login.html"><p><b>Ingresar</b></p></a>
                 </div>
-                <div class="informacion">
+                <div class="informacion2">
                     <img src="Images/nav/carrito.png" alt="Carrito de compras">
-                    <p>0</p>
-                    <p>Carro de Compras</p>
+                    <p><b>Carro de Compras</b></p>
                 </div>
             </div>
+            <label for="toggle-menu"><img src="/Images/nav/bars-solid.svg" alt="Icono Menu" id="iconMenu"></label>
+            <input type="checkbox" id="toggle-menu">
             <ul id="menu">
-                <li>Nosotros</li>
-                <li>Contacto</li>
-                <li>Envíos a todo el país</li>
-                <li>Productos</li>
+                <li><a href="index.html" class="btnesMenu">Inicio</a></li>
+                <li><a href="#callToAction">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <p>Envíos a todo el país</p>
+                <li><a href="#categorias">Productos</a></li>
                <!-- <li id="submenu">
                     <h4>Productos</h4>
                     <img src="Images/nav/flechaAbajo.png" alt="Flecha abajo">
@@ -128,7 +130,7 @@
         <div id="beneficios">
             <div class="cardBeneficio">
                 <img src="Images/iconos/Calidad.png" alt="Icono corona">
-                <p><b>Calidad Garantizada</b> <br> el mejor precio y calidad </p>
+                <p><b>Calidad Garantizada</b> <br> al mejor precio </p>
                 
             </div>
             <div class="cardBeneficio">
@@ -138,7 +140,7 @@
             </div>
             <div class="cardBeneficio">
                 <img src="Images/iconos/Delivery.png" alt="Icono caja con tilde">
-                <p><b>Delivery Gratis</b> <br> a partir de $30.000</p>
+                <p><b>Delivery Gratis</b> <br> desde $30.000</p>
             </div>
         </div>
         <!-- Testimonios 
@@ -163,42 +165,46 @@
     </main>
     <!-- Pie de Página-->
     <footer>
-        <div>
+        <div id="contacto">
             <h3>Recibe nuestro catalogo</h3>
-            <div>
+            <div id="correo">
                 <h4>Correo electrónico</h4>
                 <img src="Images/PiePagina/envio1.png" alt="Icono de enviar">
             </div>
-            <div>
+            <div class="informacion">
                 <img src="Images/PiePagina/callcenter.png" alt="Icono de llamadas">
                 <h4>Llámanos al (+54 9) 2615 901475</h4>
             </div>
         </div>
-        <div>
-            <img class="logo" src="Images/logoGaelecMaterElec.png" alt="Logo Gaelec Materiales Eléctricos">
-            <h3>Valentin Alsina 534, Dorrego Guaymallen Mendoza.</h3>
-            <a href="https://www.instagram.com/GaelecMaterialeselectricos/" target="_blank">
-                <img src="Images/PiePagina/logoInsta.png" alt="Icono de Instagram">
-            </a>
-            <a href="https://facebook.com/GaelecMaterialeselectricos" target="_blank">
-                <img src="Images/PiePagina/logoFacebook.png" alt="Icono de Facebook">
-            </a>
-            <a href="https://wa.me/message/WNA2DAIUBEXOG1" target="_blank">
-                <img src="Images/PiePagina/callcenter.png" alt="Icono de WhatsApp">
-            </a>
-            <img src="Images/PiePagina/logoMail.png" alt="Icono de Gmail">
-            
-        </div>
-        <div>
-            <h4>¿Necesita Ayuda?</h4>
-            <ul>
-                <li>Sobre Nosotros</li>
-                <li>Contáctenos</li>
-                <li>Políticas de Devoluciones</li>
-                <li>Políticas de Privacidad</li>
-                <li>Políticas de Pago</li>
-            </ul>
-        </div>
+        <section>
+            <div id="redes">
+                <img src="Images/logoGaelecMaterElec.png" alt="Logo Gaelec Materiales Eléctricos">
+                <h3>Valentin Alsina 534, Dorrego Guaymallen Mendoza.</h3>
+                <div id="imgRedes">
+                    <a href="https://www.instagram.com/GaelecMaterialeselectricos/" target="_blank">
+                        <img src="Images/PiePagina/logoInsta.png" alt="Icono de Instagram">
+                    </a>
+                    <a href="https://facebook.com/GaelecMaterialeselectricos" target="_blank">
+                        <img src="Images/PiePagina/logoFacebook.png" alt="Icono de Facebook">
+                    </a>
+                    <a href="https://wa.me/message/WNA2DAIUBEXOG1" target="_blank">
+                        <img src="Images/PiePagina/callcenter.png" alt="Icono de WhatsApp">
+                    </a>
+                        <img src="Images/PiePagina/logoMail.png" alt="Icono de Gmail">    
+                </div>
+            </div>
+            <div>
+                <h4>¿Necesita Ayuda?</h4>
+                <ul id="ayuda">
+                    <li>Sobre Nosotros</li>
+                    <li>Contáctenos</li>
+                    <li>Políticas de Devoluciones</li>
+                    <li>Políticas de Privacidad</li>
+                    <li>Políticas de Pago</li>
+                </ul>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.2871359899455!2d-68.835978824848!3d-32.9170111703915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e095de84883db%3A0xabbfd01f518e1854!2sValent%C3%ADn%20Alsina%20534%2C%20M5519%20Mendoza!5e0!3m2!1ses-419!2sar!4v1698954069337!5m2!1ses-419!2sar" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
         <!--Api iframe maps-->
 
     </footer>
